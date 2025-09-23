@@ -102,7 +102,7 @@ def test_set_log2phy_map(mock_adaptor):
 
 def test_invalid_state_asyn_update(mock_adaptor):
     loader_obj = loader.D2DExpertWeightLoader()
-    loader_obj.set_adator(mock_adaptor)  
+    loader_obj.set_adator(mock_adaptor)
 
     loader_obj.state = loader.ExpertWeightUpdateState.WAITING
     reqs: list[Any] = []
